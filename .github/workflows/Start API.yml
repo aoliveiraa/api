@@ -1,0 +1,33 @@
+name: ActionCallAPI
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@master
+    
+    - name: Set Up .NetCore
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '3.1.408'
+        
+    - name: Dotnet Restore
+      run: |
+        cd src/ApiReservas/
+        dotnet restore
+        
+    - name: Build with dotnet
+      run: |
+        cd src/ApiReservas/
+        dotnet build
+        
+    - name: dotnet RUN
+      run: |
+        cd src/ApiReservas/
+        dotnet run
