@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3tFa9WJEzG0xWXF0BQ82sgnmH/cK47RCJhPNZ2VK9m2T5rbONH1bmcIAOVCR+pDishhzieS0z3Jx58WpPfR1LA==",
+  "dgSpecHash": "+kTd2VEDQ1DkKHX8glTj50PP/NXleEye7nqhw9x+8mS8YvwJRmPBu/z4X0RKEYiFO/2vqx2BSr1G0tTS/xvQHA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aoliveira\\source\\repos\\Transformation\\Studying\\api-test\\ApiReservas\\ApiReservas\\ApiReservas.csproj",
+  "projectFilePath": "C:\\Users\\aoliveira\\source\\repos\\Transformation\\Studying\\api\\src\\ApiReservas\\ApiReservas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aoliveira\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.6\\microsoft.aspnetcore.jsonpatch.5.0.6.nupkg.sha512",
     "C:\\Users\\aoliveira\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

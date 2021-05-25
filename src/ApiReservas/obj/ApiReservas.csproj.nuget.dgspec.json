@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aoliveira\\source\\repos\\Transformation\\Studying\\api-test\\ApiReservas\\ApiReservas\\ApiReservas.csproj": {}
+    "C:\\Users\\aoliveira\\source\\repos\\Transformation\\Studying\\api\\src\\ApiReservas\\ApiReservas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aoliveira\\source\\repos\\Transformation\\Studying\\api-test\\ApiReservas\\ApiReservas\\ApiReservas.csproj": {
+    "C:\\Users\\aoliveira\\source\\repos\\Transformation\\Studying\\api\\src\\ApiReservas\\ApiReservas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aoliveira\\source\\repos\\Transformation\\Studying\\api-test\\ApiReservas\\ApiReservas\\ApiReservas.csproj",
+        "projectUniqueName": "C:\\Users\\aoliveira\\source\\repos\\Transformation\\Studying\\api\\src\\ApiReservas\\ApiReservas.csproj",
         "projectName": "ApiReservas",
-        "projectPath": "C:\\Users\\aoliveira\\source\\repos\\Transformation\\Studying\\api-test\\ApiReservas\\ApiReservas\\ApiReservas.csproj",
+        "projectPath": "C:\\Users\\aoliveira\\source\\repos\\Transformation\\Studying\\api\\src\\ApiReservas\\ApiReservas.csproj",
         "packagesPath": "C:\\Users\\aoliveira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aoliveira\\source\\repos\\Transformation\\Studying\\api-test\\ApiReservas\\ApiReservas\\obj\\",
+        "outputPath": "C:\\Users\\aoliveira\\source\\repos\\Transformation\\Studying\\api\\src\\ApiReservas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
