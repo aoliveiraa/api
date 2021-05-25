@@ -26,8 +26,3 @@ jobs:
       run: |
         cd src/ApiReservas/
         dotnet build
-        
-    - name: dotnet RUN
-      run: |
-        cd src/ApiReservas/
-        dotnet run
