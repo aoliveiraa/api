@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "3tFa9WJEzG0xWXF0BQ82sgnmH/cK47RCJhPNZ2VK9m2T5rbONH1bmcIAOVCR+pDishhzieS0z3Jx58WpPfR1LA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aoliveira\\source\\repos\\Transformation\\Studying\\api-test\\ApiReservas\\ApiReservas\\ApiReservas.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aoliveira\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.6\\microsoft.aspnetcore.jsonpatch.5.0.6.nupkg.sha512",
+    "C:\\Users\\aoliveira\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\aoliveira\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
