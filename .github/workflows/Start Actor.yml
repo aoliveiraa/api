@@ -14,6 +14,14 @@ jobs:
     - name: Setup Node.js environment
       uses: actions/setup-node@v2.1.5
       
+    - name: Install Opentest 
+      run: |
+        npm install opentest -g
+        cd\
+        md C:\opentest
+        cd C:\opentest
+        opentest quick-start   
+      
     - name: Start 
       run: |
         cd C:\opentest\server
