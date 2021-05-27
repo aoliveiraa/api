@@ -1,0 +1,20 @@
+name: Action Start Opentest Actor
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v2.1.5
+      
+    - name: Start 
+      run: |
+        cd C:\opentest\server
+        opentest server
