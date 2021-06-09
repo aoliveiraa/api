@@ -35,7 +35,10 @@ jobs:
         
     - name: Start Script
       run: .github\scripts\startOpentest.bat
-        
+    
+    - name: Api Actors
+      run: curl http://localhost:3000/api/actors
+      
     - name: Start Test
       run: |
         cd ${{github.workspace}}/opentest/test-repo/templates
