@@ -1,8 +1,13 @@
+param (
+    [Parameter()]
+    [string]$BasePath
+)
+
 $ErrorActionPreference = "Stop"
 
 #start dotnet application
 $dotnet = Start-Job -ScriptBlock {
-    dotnet run src/ApiReservas
+    dotnet run $using:BasePath/src/ApiReservas
 }
 
 Start-Sleep -Seconds 10
@@ -11,7 +16,7 @@ Receive-Job $dotnet
 
 #start server 
 $server = Start-Job -ScriptBlock {
-    cd .\opentest\server
+    cd $using:BasePath\opentest\server
     opentest server
 }
 
@@ -21,7 +26,7 @@ Receive-Job $server
 
 #start actor 
 $actor = Start-Job -ScriptBlock {
-    cd .\opentest\actor-web
+    cd $using:BasePath\opentest\actor-web
     opentest actor
 }
 
