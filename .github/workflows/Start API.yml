@@ -34,12 +34,4 @@ jobs:
         npm install opentest -g
         
     - name: Start Script
-      run: .\.github\scripts\startApi.ps1
-    
-    - name: Api Actors
-      run: curl http://localhost:3000/api/actors
-      
-    - name: Start Test
-      run: |
-        cd ${{github.workspace}}/opentest/test-repo/templates
-        opentest session create --template "Call API Template" --wait
+      run: .\.github\scripts\startApi.ps1 ${{github.workspace}}
