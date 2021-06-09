@@ -34,7 +34,7 @@ jobs:
         npm install opentest -g
         
     - name: Start Script
-      run: ./.github/scripts/startOpentest.bat
+      run: .github\scripts\startOpentest.bat
         
     - name: Start Test
       run: |
