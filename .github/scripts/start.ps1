@@ -1,3 +1,8 @@
+param (
+    [Parameter()]
+    [string]$BasePath
+)
+
 $ErrorActionPreference = "Stop"
 
 #start dotnet application
