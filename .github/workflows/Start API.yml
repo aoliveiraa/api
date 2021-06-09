@@ -30,9 +30,6 @@ jobs:
     - name: Install Opentest 
       run: |
         npm install opentest -g
-   
-    - name: Start API with PowerShell
-      run: .\.github\scripts\start.ps1 src\ApiReservas\
       
     - name: Start Script
       run: .\.github\scripts\startApi.ps1
