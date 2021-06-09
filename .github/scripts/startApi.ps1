@@ -5,6 +5,14 @@ param (
 
 $ErrorActionPreference = "Stop"
 
+#start dotnet application
+$dotnet = Start-Job -ScriptBlock {
+    dotnet run /src/ApiReservas
+}
+
+Start-Sleep -Seconds 10
+
+Receive-Job $dotnet
 
 #start server 
 $server = Start-Job -ScriptBlock {
