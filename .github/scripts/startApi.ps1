@@ -26,6 +26,4 @@ Start-Sleep -Seconds 15
 
 Receive-Job $actor
 
-& opentest session create --template "Call API Template" --wait --out junit.xml
-
 exit 0
