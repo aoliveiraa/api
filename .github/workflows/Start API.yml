@@ -32,4 +32,4 @@ jobs:
         npm install opentest -g
       
     - name: Start Script
-      run: .\.github\scripts\startApi.ps1
+      run: .\.github\scripts\startApi.ps1 src\ApiReservas
