@@ -20,14 +20,6 @@ jobs:
         
     - name: Build with dotnet
       run: dotnet publish -o .\publish    
-    
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.8'
-          
-    - name: Install Selenium
-      run: npm install selenium
         
     - name: Setup Node.js environment
       uses: actions/setup-node@v2.1.5
