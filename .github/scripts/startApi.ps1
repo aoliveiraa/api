@@ -7,7 +7,7 @@ $ErrorActionPreference = "Stop"
 
 & npm install selenium
 
-Start-Sleep -Seconds 10
+Start-Sleep -Seconds 20
 
 #start dotnet application
 $dotnet = Start-Job -ScriptBlock {
