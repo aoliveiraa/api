@@ -34,6 +34,7 @@ Start-Sleep -Seconds 15
 
 Receive-Job $actor
 
-& opentest session create --template "Call API Template" --wait --out .\test-results\junit.xml
+New-Item "$BasePath\test-results" -ItemType Directory
+& opentest session create --template "Call API Template" --wait --out $BasePath\test-results\junit.xml
 
 exit 0
