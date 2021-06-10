@@ -5,7 +5,7 @@ param (
 
 $ErrorActionPreference = "Stop"
 
-Get-Command npm install selenium
+& npm install selenium
 
 Start-Sleep -Seconds 10
 
