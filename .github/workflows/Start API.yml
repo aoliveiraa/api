@@ -19,11 +19,8 @@ jobs:
       run: dotnet restore
         
     - name: Build with dotnet
-      run: dotnet publish -o .\publish
-      
-    - name: Checkout
-      uses: actions/checkout@v2
-    
+      run: dotnet publish -o .\publish    
+  
     - name: Setup Node.js environment
       uses: actions/setup-node@v2.1.5
       
