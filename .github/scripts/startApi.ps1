@@ -10,8 +10,6 @@ $selenium = Start-Job -ScriptBlock{
     npm install selenium
 }
 
-Recive-Job $selenium
-
 Start-Sleep -Seconds 10
 
 #start dotnet application
