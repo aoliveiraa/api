@@ -6,7 +6,9 @@ on:
 jobs:
   build:
     runs-on: windows-latest
-    
+    matrix:
+      python-version: [2.7, 3.5, 3.6, 3.7, 3.8]
+        
     steps:
     - uses: actions/checkout@master
     
@@ -20,7 +22,15 @@ jobs:
         
     - name: Build with dotnet
       run: dotnet publish -o .\publish    
-      
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+          
+    - name: Setup Python
+      run: python .\.github\scripts\driver.py
+        
     - name: Setup Node.js environment
       uses: actions/setup-node@v2.1.5
       
