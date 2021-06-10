@@ -7,7 +7,7 @@ $ErrorActionPreference = "Stop"
 
 #start dotnet application
 $dotnet = Start-Job -ScriptBlock {
-    dotnet run /src/ApiReservas/
+    dotnet run
 }
 
 Start-Sleep -Seconds 10

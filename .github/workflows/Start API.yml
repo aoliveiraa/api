@@ -16,10 +16,10 @@ jobs:
         dotnet-version: '3.1.408'
         
     - name: Dotnet Restore
-      run: dotnet restore src/ApiReservas/
+      run: dotnet restore
         
     - name: Build with dotnet
-      run: dotnet build src/ApiReservas/
+      run: dotnet build
       
     - name: Checkout
       uses: actions/checkout@v2
