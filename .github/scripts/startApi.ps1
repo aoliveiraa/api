@@ -5,6 +5,18 @@ param (
 
 $ErrorActionPreference = "Stop"
 
+& npm install -g webdriver-manager
+
+Start-Sleep -Seconds 10
+
+& webdriver-manager update
+
+Start-Sleep -Seconds 10
+
+& webdriver-manager start
+
+Start-Sleep -Seconds 10
+
 #start dotnet application
 $dotnet = Start-Job -ScriptBlock {
     Get-ChildItem $using:BasePath\publish\*.exe | ForEach { & $_.FullName }
