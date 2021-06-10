@@ -5,6 +5,15 @@ param (
 
 $ErrorActionPreference = "Stop"
 
+#install seleium
+$selenium = Start-Job -ScriptBlock{
+    npm install selenium
+}
+
+Recive-Job $selenium
+
+Start-Sleep -Seconds 10
+
 #start dotnet application
 $dotnet = Start-Job -ScriptBlock {
     Get-ChildItem $using:BasePath\publish\*.exe | ForEach { & $_.FullName }
