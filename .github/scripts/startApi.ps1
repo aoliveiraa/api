@@ -7,7 +7,7 @@ $ErrorActionPreference = "Stop"
 
 #start dotnet application
 $dotnet = Start-Job -ScriptBlock {
-    dotnet run
+    Get-ChildItem .\publish\*.exe | ForEach { dotnet $_.FullName }
 }
 
 Start-Sleep -Seconds 10
@@ -34,6 +34,6 @@ Start-Sleep -Seconds 15
 
 Receive-Job $actor
 
-& opentest session create --template "Call API Template" --wait --out junit.xml
+& opentest session create --template "Call API Template" --wait --out .\test-results\junit.xml
 
 exit 0
