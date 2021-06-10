@@ -5,10 +5,7 @@ param (
 
 $ErrorActionPreference = "Stop"
 
-#install seleium
-$selenium = Start-Job -ScriptBlock{
-    npm install selenium
-}
+Get-Command npm install selenium
 
 Start-Sleep -Seconds 10
 
