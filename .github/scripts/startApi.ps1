@@ -5,7 +5,7 @@ param (
 
 $ErrorActionPreference = "Stop"
 
-& npm install selenium-chromedriver
+& npm install chromedriver
 
 Start-Sleep -Seconds 20
 
