@@ -26,8 +26,8 @@ jobs:
       with:
         python-version: '3.8'
           
-    - name: Setup Python
-      run: python install selenium
+    - name: Install Selenium
+      run: npm install selenium
         
     - name: Setup Node.js environment
       uses: actions/setup-node@v2.1.5
