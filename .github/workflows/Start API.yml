@@ -27,7 +27,7 @@ jobs:
         python-version: '3.8'
           
     - name: Setup Python
-      run: python .\.github\scripts\driver.py
+      run: pip2 install selenium
         
     - name: Setup Node.js environment
       uses: actions/setup-node@v2.1.5
