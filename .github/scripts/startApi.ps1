@@ -13,10 +13,6 @@ Start-Sleep -Seconds 10
 
 Start-Sleep -Seconds 10
 
-& webdriver-manager start
-
-Start-Sleep -Seconds 10
-
 #start dotnet application
 $dotnet = Start-Job -ScriptBlock {
     Get-ChildItem $using:BasePath\publish\*.exe | ForEach { & $_.FullName }
