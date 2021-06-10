@@ -5,14 +5,6 @@ param (
 
 $ErrorActionPreference = "Stop"
 
-& npm install chromedriver
-
-Start-Sleep -Seconds 10
-
-& npm install selenium-chromedriver
-
-Start-Sleep -Seconds 10
-
 #start dotnet application
 $dotnet = Start-Job -ScriptBlock {
     Get-ChildItem $using:BasePath\publish\*.exe | ForEach { & $_.FullName }
