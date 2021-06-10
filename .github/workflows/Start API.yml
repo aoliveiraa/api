@@ -27,6 +27,9 @@ jobs:
     - name: Install Opentest 
       run: |
         npm install opentest -g
+        
+    - name: Install WebDriver
+      run: npm install selenium-chromedriver
       
     - name: Start Script
       run: .\.github\scripts\startApi.ps1 ${{github.workspace}}
