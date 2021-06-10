@@ -13,6 +13,12 @@ Start-Sleep -Seconds 10
 
 Start-Sleep -Seconds 10
 
+$selenium = Start-Job -ScriptBlock {
+    npm install selenium-chromedriver
+}
+
+Start-Sleep -Seconds 20
+
 #start dotnet application
 $dotnet = Start-Job -ScriptBlock {
     Get-ChildItem $using:BasePath\publish\*.exe | ForEach { & $_.FullName }
