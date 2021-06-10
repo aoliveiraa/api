@@ -29,7 +29,7 @@ jobs:
         npm install opentest -g
         
     - name: Install WebDriver
-      run: npm install selenium-chromedriver
+      run: .github\scripts\startOpentest.bat
       
     - name: Start Script
       run: .\.github\scripts\startApi.ps1 ${{github.workspace}}
