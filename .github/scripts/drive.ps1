@@ -5,7 +5,9 @@ param (
 
 $ErrorActionPreference = "Stop"
 
-& New-Item -Path C:\temp\Selenium -ItemType Directory
+& npm install chrome-browser
+
+Start-Sleep -Seconds 30
 
 $move = Start-Job -ScriptBlock {  
     Move-Item -Path $using:BasePath\Selenium -Destination C:\Selenium
