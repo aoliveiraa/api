@@ -27,7 +27,9 @@ jobs:
     - name: Install Opentest 
       run: |
         npm install opentest -g
-      
+    - name: Move Selenium
+      run: .\.giyhub\sripts\drive.ps1 ${{github.workspace}}
+    
     - name: Start Script
       run: .\.github\scripts\startApi.ps1 ${{github.workspace}}
 
