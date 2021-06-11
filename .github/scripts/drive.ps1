@@ -5,8 +5,10 @@ param (
 
 $ErrorActionPreference = "Stop"
 
+& New-Item -Path C:\temp\Selenium -ItemType Directory
+
 $move = Start-Job -ScriptBlock {  
-    Move-Item -Path $using:BasePath\Selenium -Destination C:\
+    Move-Item -Path $using:BasePath\Selenium -Destination C:\Selenium
 }
 
 Receive-Job $move
